@@ -1,3 +1,7 @@
+# Yusupov
+# Take a number from user and print the Pascal's triangle of this level
+
+# Draving function
 def Packals_triangle(n):
     if n == 1:
         return [[1]] 
@@ -10,7 +14,14 @@ def Packals_triangle(n):
         current_row += [1]
         result.append(current_row)
         return result
-level = input("Введите уровень треугольника Паскаля ")
-triangle = Packals_triangle(int(level))
-for row in triangle:
-    print(row)
+    
+
+# Main function
+def main():
+    level = input("Введите уровень треугольника Паскаля ")
+    triangle = Packals_triangle(int(level))
+    for row in triangle:
+        print(row)
+
+if __name__ == "__main__":
+    main()

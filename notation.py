@@ -1,3 +1,8 @@
+# Yusupov
+# Take a number and the base of the number system from user 
+# And find written number in this base of the number system from user 
+
+# Tranfering function
 def transfer(n, b):
     if n < b:
         if n == 10:
@@ -27,6 +32,13 @@ def transfer(n, b):
     if digit == 15:
          digit = "F"
     return transfer(n, b) + str(digit)
-number = int(input("Введите число "))
-base = int(input("Введите базу системы счисления "))
-print(f"Число {number}, записанное в десятичной системе, в системе с основанием {base} записывется как {transfer(number, base)}")
+
+
+# Main function
+def main():
+    number = int(input("Введите число "))
+    base = int(input("Введите базу системы счисления "))
+    print(f"Число {number}, записанное в десятичной системе, в системе с основанием {base} записывется как {transfer(number, base)}")
+
+if __name__ == "__main__":
+    main()
