@@ -4,7 +4,7 @@
 # Import all nesessary libs and modules
 import Euclid as E
 import Packal as P
-import notation as n
+from distant_module import notation as n
 
 # The main function of the project
 def main():
