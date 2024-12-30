@@ -5,7 +5,7 @@ import sys
 
 sys.set_int_max_str_digits(666666)
 # Lambda-function
-func = lambda x: pow(pow(pow(pow(x,x),x),x),x)
+func = lambda x: pow(pow(pow(x,x),x),x)
 
 
 # Main function
